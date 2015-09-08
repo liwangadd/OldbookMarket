@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:background="#F8F8F8"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/top" >
+
+            <LinearLayout
+                android:id="@+id/bookmarket_back"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/top_bt"
+                android:orientation="horizontal"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/register_back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="7dp"
+                    android:gravity="center"
+                    android:text="书籍市场"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_page_search"
+                android:layout_width="40dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="2dp"
+                android:layout_toLeftOf="@+id/main_page_add"
+                android:background="@drawable/top_bt"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/top_search" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_page_add"
+                android:layout_width="40dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/top_bt"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/top_right" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#F8F8F8"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp" >
+
+                <TextView
+                    android:id="@+id/bookmarket_select1"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/select_unselect"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="最新发布"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/bookmarket_select2"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/select_unselect"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="低价优先"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/bookmarket_select3"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/select_unselect"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="学姐卖家"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/select_kinds"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/university_layout_background"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingTop="12dp"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:singleLine="true"
+                        android:text="书籍分类："
+                        android:textSize="14sp" >
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textSize="14sp" >
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textSize="14sp" >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/bookmarket_type1"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/type_unselect"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="全部分类"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/bookmarket_type2"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/type_unselect"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:singleLine="true"
+                        android:text="教材/课件/笔记"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/bookmarket_type3"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/type_unselect"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:singleLine="true"
+                        android:text="文学/小说/动漫"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/bookmarket_type4"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/type_unselect"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:singleLine="true"
+                        android:text="历史/艺术/人文"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/bookmarket_type5"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/type_unselect"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:singleLine="true"
+                        android:text="IT/工业技术"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/bookmarket_type6"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/type_unselect"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:singleLine="true"
+                        android:text="经济/管理/法律"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/bookmarket_type7"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/type_unselect"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:singleLine="true"
+                        android:text="数学/自然科学"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/bookmarket_type8"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/type_unselect"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:singleLine="true"
+                        android:text="考试/外语/工具书"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/bookmarket_type9"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/type_unselect"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:singleLine="true"
+                        android:text="其他"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:singleLine="true"
+                        android:text="适合人群："
+                        android:textSize="14sp" >
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textSize="12sp" >
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textSize="12sp" >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/bookmarket_who1"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="不限"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/bookmarket_who2"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/type_unselect"
+                        android:gravity="center"
+                        android:text="教材资料"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/bookmarket_who3"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/type_unselect"
+                        android:gravity="center"
+                        android:text="课外"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.yunjian.view.PullToRefreshView
+            android:id="@+id/main_pull_refresh_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:id="@+id/main_page_scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="11dp"
+                    android:paddingRight="11dp" >
+
+                    <com.yunjian.view.MyGridView
+                        android:id="@+id/gridview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#F8F8F8"
+                        android:gravity="center"
+                        android:numColumns="3"
+                        android:stretchMode="columnWidth" />
+                </LinearLayout>
+            </ScrollView>
+        </com.yunjian.view.PullToRefreshView>
+
+        <LinearLayout
+            android:id="@+id/layout_bookmarket_nodetail"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="11dp"
+            android:paddingRight="11dp"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/bookmarket_nodetail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@drawable/book_market_nodetail" >
+            </ImageView>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name = "seagreen">#2E8B57</color>
+    <color name = "transparent">#66333333</color>
+    <drawable name = "transparent">#00FFFFFF</drawable>
+    <drawable name = "white">#ffffff</drawable> 
+    <color name="top">#3D7751</color>
+    <color name="top_pressed">#114b28</color>
+	<color name="black">#000000</color><!--黑色 -->
+    <color name="white">#FFFFFF</color><!--白色 -->  
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_frame">#ff88ae00</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="background">#F7F7F7</color>
+    <color name="light_gray">#535353</color><!-- 浅灰 -->
+    <color name="background_gray">#E6EBDB</color>
+    <color name="fontcolor">#A2A2A2</color> <!-- 灰色字体 -->
+    <color name="separation_line">#B7B7B7</color> <!-- 浅灰色分隔线 -->
+    <color name="prompt">#A1684C</color> <!-- 棕色提醒 -->
+    <color name="hint_color">#858585</color> <!-- hint -->
+    <color name="red_price">#E1261C</color> <!-- 红色价格 -->
+    <color name="black_strik">#323232</color>
+</resources>

@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="fill_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/main_bottom"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/top" >
+
+            <LinearLayout
+                android:id="@+id/bookdetail_back"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/top_bt"
+                android:orientation="horizontal"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/register_back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="7dp"
+                    android:gravity="center"
+                    android:text="书籍详情"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/book_detail_top_share"
+                android:layout_width="60dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/top_bt"
+                android:gravity="center"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/top_share" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.yunjian.view.MyScrollView
+            android:id="@+id/book_detail_scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/header"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/book_detail_image"
+                        android:layout_width="1000dp"
+                        android:layout_height="250dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/default_image" />
+
+                    <ImageView
+                        android:id="@+id/book_detail_collection"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_above="@+id/point_layout"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginRight="12dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/bookdetail_collection"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/point_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/book_detail_image"
+                        android:gravity="center"
+                        android:paddingBottom="12dp" >
+
+                        <ImageView
+                            android:id="@+id/image_point1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/feature_point" />
+
+                        <ImageView
+                            android:id="@+id/image_point2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:src="@drawable/feature_point"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/image_point3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:src="@drawable/feature_point"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#D0D0D0" />
+
+                <LinearLayout
+                    android:id="@+id/book_detail_middle_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:orientation="vertical"
+                            android:paddingLeft="10dp" >
+
+                            <TextView
+                                android:id="@+id/book_detail_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:ellipsize="end"
+                                android:paddingTop="4dp"
+                                android:singleLine="true"
+                                android:textColor="@color/black_strik"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingTop="4dp" >
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal" >
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="12dp"
+                                        android:background="@drawable/detail_look" />
+
+                                    <TextView
+                                        android:id="@+id/book_detail_read_time"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left"
+                                        android:ellipsize="end"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="4dp"
+                                        android:singleLine="true"
+                                        android:textColor="@color/hint_color"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/book_detail_publish_days"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="right"
+                                        android:layout_marginRight="10dp"
+                                        android:ellipsize="end"
+                                        android:singleLine="true"
+                                        android:textColor="@color/hint_color"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:paddingBottom="4dp"
+                            android:paddingTop="4dp"
+                            android:src="@drawable/detail_line" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:paddingLeft="4dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:ellipsize="end"
+                                android:paddingTop="4dp"
+                                android:singleLine="true"
+                                android:text="￥"
+                                android:textColor="@color/red_price"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/book_detail_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:ellipsize="marquee"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:scrollHorizontally="true"
+                                android:singleLine="true"
+                                android:textColor="@color/red_price"
+                                android:textSize="24sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:background="#D0D0D0" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:padding="8dp" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <RelativeLayout
+                                android:layout_width="50dp"
+                                android:layout_height="50dp" >
+
+                                <com.yunjian.view.CircleImageView
+                                    android:id="@+id/book_detail_user_image"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/user_img" />
+
+                                <ImageView
+                                    android:id="@+id/user_sex"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="15dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentRight="true"
+                                    android:adjustViewBounds="true"
+                                    android:src="@drawable/user_sex_man" />
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center" >
+
+                                <TextView
+                                    android:id="@+id/book_detail_user_name"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="end"
+                                    android:gravity="center_horizontal"
+                                    android:singleLine="true"
+                                    android:textColor="@color/black_strik"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:paddingLeft="12dp" >
+
+                            <LinearLayout
+                                android:id="@+id/ll_book_user_tel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal" >
+
+                                <ImageView
+                                    android:layout_width="16dp"
+                                    android:layout_height="16dp"
+                                    android:adjustViewBounds="true"
+                                    android:src="@drawable/detail_phone" />
+
+                                <TextView
+                                    android:id="@+id/book_detail_user_tel"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:ellipsize="end"
+                                    android:paddingLeft="4dp"
+                                    android:singleLine="true"
+                                    android:textColor="@color/hint_color"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal" >
+
+                                <LinearLayout
+                                    android:id="@+id/ll_book_user_qq"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="32dp"
+                                    android:gravity="center"
+                                    android:orientation="horizontal" >
+
+                                    <ImageView
+                                        android:layout_width="16dp"
+                                        android:layout_height="16dp"
+                                        android:adjustViewBounds="true"
+                                        android:src="@drawable/detail_q" />
+
+                                    <TextView
+                                        android:id="@+id/book_detail_user_QQ"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left"
+                                        android:ellipsize="end"
+                                        android:paddingLeft="4dp"
+                                        android:singleLine="true"
+                                        android:textColor="@color/hint_color"
+                                        android:textSize="14sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/ll_book_user_wechat"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="horizontal" >
+
+                                    <ImageView
+                                        android:layout_width="16dp"
+                                        android:layout_height="16dp"
+                                        android:adjustViewBounds="true"
+                                        android:src="@drawable/addwish_wechat" />
+
+                                    <TextView
+                                        android:id="@+id/book_detail_user_weixin"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left"
+                                        android:ellipsize="end"
+                                        android:paddingLeft="4dp"
+                                        android:singleLine="true"
+                                        android:textColor="@color/hint_color"
+                                        android:textSize="14sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:ellipsize="end"
+                                android:singleLine="true"
+                                android:text="(联系我的时候请说明是在校园淘书看到的)"
+                                android:textColor="#3E771E"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/douban_introduction_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:orientation="vertical"
+                            android:padding="12dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="内容简介"
+                                android:textColor="@color/black_strik"
+                                android:textSize="16sp" />
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1px"
+                                android:background="#D0D0D0" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:padding="12dp" >
+
+                            <TextView
+                                android:id="@+id/douban_introduction"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="作者根据自己多年经验"
+                                android:textColor="@color/fontcolor" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:orientation="vertical"
+                            android:padding="12dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="豆瓣参考"
+                                android:textColor="@color/black_strik"
+                                android:textSize="16sp" />
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1px"
+                                android:background="#D0D0D0" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:padding="12dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="豆瓣评分："
+                                android:textColor="@color/fontcolor" />
+
+                            <TextView
+                                android:id="@+id/douban_score"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="4星半"
+                                android:textColor="@color/fontcolor" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="原价："
+                                    android:textColor="@color/fontcolor" />
+
+                                <TextView
+                                    android:id="@+id/douban_price"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="30元"
+                                    android:textColor="@color/fontcolor" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <com.yunjian.view.MyGridView
+                            android:id="@+id/gridview_tag"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:layout_marginRight="12dp"
+                            android:numColumns="4"
+                            android:verticalSpacing="4dp">
+                            
+                        </com.yunjian.view.MyGridView>
+
+                        <GridLayout
+                            android:id="@+id/layout_tag"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:columnCount="4"
+                            android:gravity="right"
+                            android:paddingLeft="12dp"
+                            android:visibility="gone" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:background="@drawable/bt_main_page_top"
+                                android:padding="4dp"
+                                android:text="心理学"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:background="@drawable/bt_main_page_top"
+                                android:padding="4dp"
+                                android:text="心理学"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:background="@drawable/bt_main_page_top"
+                                android:padding="4dp"
+                                android:text="心理学"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:background="@drawable/bt_main_page_top"
+                                android:padding="4dp"
+                                android:text="心理学"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:background="@drawable/bt_main_page_top"
+                                android:padding="4dp"
+                                android:text="心理学"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:background="@drawable/bt_main_page_top"
+                                android:padding="4dp"
+                                android:text="心理学"
+                                android:textColor="@color/white" />
+                        </GridLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:padding="12dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="卖家有话说"
+                            android:textColor="@color/black_strik"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="#D0D0D0" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:padding="12dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="书籍近况："
+                            android:textColor="@color/hint_color" />
+
+                        <TextView
+                            android:id="@+id/book_detail_basic_condition"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="书籍近况书籍近况书籍近况书籍近况"
+                            android:textColor="@color/fontcolor" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:padding="12dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="适合人群："
+                            android:textColor="@color/hint_color" />
+
+                        <TextView
+                            android:id="@+id/book_detail_suit_crowd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="适合人群适合人群"
+                            android:textColor="@color/fontcolor" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:padding="12dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="卖家书评："
+                            android:textColor="@color/hint_color" />
+
+                        <TextView
+                            android:id="@+id/book_detail_my_evaluation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="卖家书评卖家书评卖家书评卖家书评"
+                            android:textColor="@color/fontcolor" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="20dp"
+                            android:background="@drawable/book_detail_background"
+                            android:gravity="end"
+                            android:orientation="vertical"
+                            android:paddingBottom="4dp"
+                            android:paddingRight="4dp"
+                            android:visibility="gone" >
+
+                            <TextView
+                                android:id="@+id/book_detail_show_all"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:ellipsize="end"
+                                android:singleLine="true"
+                                android:text="查看全部"
+                                android:textColor="#467D59"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="2dp"
+                            android:background="#0000" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:orientation="vertical"
+                            android:padding="12dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="评论"
+                                android:textColor="@color/black_strik"
+                                android:textSize="16sp" />
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1px"
+                                android:background="#D0D0D0" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="85dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="left"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="8dp"
+                            android:adjustViewBounds="true"
+                            android:paddingLeft="8dp"
+                            android:src="@drawable/comment2"
+                            android:visibility="gone" />
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="2dp"
+                            android:background="#0000" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <com.yunjian.view.NoScrollListView
+                        android:id="@+id/book_detail_comment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:divider="@color/white"
+                        android:dividerHeight="1px" >
+                    </com.yunjian.view.NoScrollListView>
+
+                    <TextView
+                        android:id="@+id/empty_txv"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:text="该书暂时没有任何评论喔"
+                        android:textColor="@color/fontcolor"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+        </com.yunjian.view.MyScrollView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#8E441E" />
+
+    <LinearLayout
+        android:id="@+id/main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#3D7751" />
+
+        <LinearLayout
+            android:id="@+id/bookdetail_bottomlayout"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="#EEFFFFFF"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/book_detail_bottom_comment"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/bottom_bookdetail_comment" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/book_detail_bottom_connect"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/bottom_bookdetail_connect" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/book_detail_bottom_share"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/bottom_bookdetail_share" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

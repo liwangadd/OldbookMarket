@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+    <string-array name = "quality">
+        <item >七成新</item>
+        <item >八成新</item>
+        <item >九成新</item>
+        <item >有笔记</item>
+        <item >全新</item>
+    </string-array>
+     <string-array name = "coursebook">
+        <item >大一基础课</item>
+        <item >大二基础课</item>
+        <item >专业课资料</item>
+        <item >其他教材</item>
+        <item >习题册</item>
+    </string-array>
+    <string-array name = "english">
+        <item >背单词神器</item>
+        <item >四六级资料</item>
+        <item >留学英语</item>
+        <item >口语学习</item>
+        <item >英文学习</item>
+    </string-array>
+     <string-array name = "japanese">
+        <item >N1相关</item>
+        <item >N2相关</item>
+        <item >日语单词</item>
+        <item >日语读物</item>
+        <item >日语工具书</item>
+    </string-array>
+     <string-array name = "technology">
+        <item >办公相关</item>
+        <item >程序设计</item>
+        <item >交互设计</item>
+        <item >移动开发</item>
+        <item >网络技术</item>
+    </string-array>
+     <string-array name = "master">
+        <item >专业课资料</item>
+        <item >考研英语</item>
+        <item >考研数学</item>
+        <item >考研政治</item>
+        <item >工具书</item>
+    </string-array>
+    <string-array name = "entertain">
+        <item >小说</item>
+        <item >期刊杂志</item>
+        <item >励志文学</item>
+        <item >人文社科</item>
+        <item >动漫</item>
+    </string-array>
+    
+</resources>

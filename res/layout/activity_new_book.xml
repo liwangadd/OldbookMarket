@@ -1,0 +1,850 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/top"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/addbook_back_img"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/top_bt"
+            android:orientation="horizontal"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:src="@drawable/register_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="7dp"
+                android:gravity="center"
+                android:text="发布新书"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="6dp"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/addbook_ok_img"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/top_bt"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp" >
+
+                <LinearLayout
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/pe_finish_btn" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center"
+                    android:text="书籍名称"
+                    android:textColor="@color/fontcolor"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/addbook_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_weight="3"
+                    android:hint="请输入要发布书的名称或扫描条形码"
+                    android:textColor="@color/hint_color"
+                    android:textColorHint="@color/fontcolor"
+                    android:textSize="12sp" >
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/new_book_scan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:padding="4dp"
+                    android:src="@drawable/new_book_scan" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:text="书籍照片"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/separation_line" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="32dp"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="80dp"
+                    android:padding="4dp">
+
+                    <ImageView
+                        android:id="@+id/img1"
+                        android:layout_width="50dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center_vertical"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/addbook_plus" >
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/addbook_image_delete"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="80dp"
+                    android:padding="4dp" >
+
+                    <ImageView
+                        android:id="@+id/img2"
+                        android:layout_width="50dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center_vertical"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/addbook_plus" >
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/addbook_image_delete"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="80dp"
+                    android:padding="4dp" >
+
+                    <ImageView
+                        android:id="@+id/img3"
+                        android:layout_width="50dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center_vertical"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/addbook_plus" >
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/addbook_image_delete"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/takephoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="@drawable/addbook_takephoto"
+                    android:visibility="gone" >
+                </ImageView>
+
+                <Button
+                    android:id="@+id/addbook_scan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="扫描"
+                    android:visibility="gone" >
+                </Button>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:text="书籍价格"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/separation_line" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:orientation="horizontal"
+                android:paddingLeft="32dp" >
+
+                <EditText
+                    android:id="@+id/addbook_price"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:hint="请输入要发布书的价格或选择"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
+                    android:textColor="@color/hint_color"
+                    android:textColorHint="@color/fontcolor"
+                    android:textSize="12sp" >
+                </EditText>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="(建议在100以内)"
+                    android:textColor="@color/prompt"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="32dp" >
+
+                <TextView
+                    android:id="@+id/newbook_friend"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/addbook_type_bg"
+                    android:gravity="center"
+                    android:text="送你交朋友"
+                    android:textColor="@color/fontcolor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:text="书籍分类"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/separation_line" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="32dp"
+                    android:paddingRight="32dp" >
+
+                    <Button
+                        android:id="@+id/newbook_type1"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/type_unselect"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:singleLine="true"
+                        android:text="教材/课件/笔记"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/newbook_type2"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/type_unselect"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:singleLine="true"
+                        android:text="文学/小说/动漫"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/newbook_type3"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/type_unselect"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:singleLine="true"
+                        android:text="历史/艺术/人文"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="32dp"
+                    android:paddingRight="32dp" >
+
+                    <Button
+                        android:id="@+id/newbook_type4"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/type_unselect"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:singleLine="true"
+                        android:text="IT/工业技术"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/newbook_type5"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/type_unselect"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:singleLine="true"
+                        android:text="经济/管理/法律"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/newbook_type6"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/type_unselect"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:singleLine="true"
+                        android:text="数学/自然科学"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="32dp"
+                    android:paddingRight="32dp" >
+
+                    <Button
+                        android:id="@+id/newbook_type7"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/type_unselect"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:singleLine="true"
+                        android:text="考试/外语/工具书"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/newbook_type8"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/type_unselect"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:singleLine="true"
+                        android:text="其他"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/fontcolor"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:text="书籍描述"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/separation_line" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="3"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(1)"
+                            android:textColor="@color/fontcolor" />
+
+                        <EditText
+                            android:id="@+id/addbook_quality"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="3"
+                            android:cursorVisible="false"
+                            android:editable="false"
+                            android:hint="这本书用了多久，几成新"
+                            android:textColor="@color/hint_color"
+                            android:textColorHint="@color/fontcolor"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/quality_ll"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="64dp"
+                        android:columnCount="3"
+                        android:gravity="center_vertical"
+                        android:rowCount="3"
+                        android:visibility="gone" >
+
+                        <Button
+                            android:id="@+id/new1"
+                            android:layout_width="40dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/addbook_type_bg"
+                            android:text="8成新"
+                            android:textColor="@color/fontcolor"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/new2"
+                            android:layout_width="54dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="8dp"
+                            android:background="@drawable/addbook_type_bg"
+                            android:text="没怎么用"
+                            android:textColor="@color/fontcolor"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/new3"
+                            android:layout_width="44dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="8dp"
+                            android:background="@drawable/addbook_type_bg"
+                            android:text="有笔记"
+                            android:textColor="@color/fontcolor"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(2)"
+                            android:textColor="@color/fontcolor" />
+
+                        <EditText
+                            android:id="@+id/addbook_who"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="3"
+                            android:cursorVisible="false"
+                            android:editable="false"
+                            android:hint="这本书适合谁来读"
+                            android:textColor="@color/hint_color"
+                            android:textColorHint="@color/fontcolor"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/who_ll"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="64dp"
+                        android:columnCount="3"
+                        android:gravity="center_vertical"
+                        android:rowCount="3"
+                        android:visibility="gone" >
+
+                        <Button
+                            android:id="@+id/who1"
+                            android:layout_width="54dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/addbook_type_bg"
+                            android:text="教材资料"
+                            android:textColor="@color/fontcolor"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/who2"
+                            android:layout_width="54dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="8dp"
+                            android:background="@drawable/addbook_type_bg"
+                            android:text="初步了解"
+                            android:textColor="@color/fontcolor"
+                            android:textSize="12sp"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/who3"
+                            android:layout_width="54dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="8dp"
+                            android:background="@drawable/addbook_type_bg"
+                            android:text="深入研究"
+                            android:textColor="@color/fontcolor"
+                            android:textSize="12sp"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/who4"
+                            android:layout_width="30dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="8dp"
+                            android:background="@drawable/addbook_type_bg"
+                            android:text="课外"
+                            android:textColor="@color/fontcolor"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(3)"
+                            android:textColor="@color/fontcolor" />
+
+                        <EditText
+                            android:id="@+id/addbook_help"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_weight="3"
+                            android:background="@drawable/new_book_comment_background"
+                            android:gravity="top|left"
+                            android:hint="来评价一下这本书对你的帮助吧"
+                            android:minLines="3"
+                            android:padding="8dp"
+                            android:textColor="@color/hint_color"
+                            android:textColorHint="@color/fontcolor"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="3"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="#FFFFFF"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:text="联系方式"
+                                android:textColor="@color/fontcolor"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/separation_line" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="32dp" >
+
+                        <EditText
+                            android:id="@+id/addbook_phone"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="2"
+                            android:hint="请输入手机号码"
+                            android:inputType="numberDecimal"
+                            android:maxLength="11"
+                            android:textColor="@color/hint_color"
+                            android:textColorHint="@color/fontcolor"
+                            android:textSize="12sp" >
+                        </EditText>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginBottom="8dp"
+                            android:layout_weight="1"
+                            android:gravity="bottom"
+                            android:text="（*必填）"
+                            android:textColor="@color/prompt"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="32dp" >
+
+                        <EditText
+                            android:id="@+id/addbook_qq"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="2"
+                            android:hint="请输入QQ号码"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:textColor="@color/hint_color"
+                            android:textColorHint="@color/fontcolor"
+                            android:textSize="12sp" >
+                        </EditText>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="32dp" >
+
+                        <EditText
+                            android:id="@+id/addbook_wechat"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="2"
+                            android:hint="请输入微信"
+                            android:textColor="@color/hint_color"
+                            android:textColorHint="@color/fontcolor"
+                            android:textSize="12sp" >
+                        </EditText>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

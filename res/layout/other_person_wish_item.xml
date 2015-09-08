@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/wishbg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+  	android:background="#fff"
+    android:padding="4dp" >
+
+    <ImageView
+        android:id="@+id/wishphoto"
+        android:layout_width="80dp"
+        android:layout_height="110dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_image" />
+
+    <TextView
+        android:id="@+id/wishbookname"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/wishphoto"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/wishnickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/wishbookname"
+        android:layout_below="@id/wishbookname"
+        android:layout_marginTop="4dp"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/wishcomment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/wishbookname"
+        android:layout_below="@id/wishnickname"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="急求，开价5元"
+        android:textColor="#7F7F7F"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/wishachieve"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:background="@drawable/wish_help_back"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:focusable="false"
+        android:text="帮Ta实现"
+        android:textColor="#fff"
+        android:textSize="14sp" />
+
+</RelativeLayout>
