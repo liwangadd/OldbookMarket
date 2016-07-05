@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECEDE5"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/addwish_top_bg1"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/addwish_back_img"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="19dp"
+                android:src="@drawable/register_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="7dp"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:text="创建心愿单"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/addwish_ok_img"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/pe_finish_btn" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="154dp"
+                android:background="@drawable/addwish_top_bg2"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:orientation="horizontal" >
+                </View>
+
+                <EditText
+                    android:id="@+id/addwish_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="19dp"
+                    android:background="@drawable/addwish_name_bg"
+                    android:hint="请输入书名"
+                    android:paddingLeft="8dp"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="10dp"
+                    android:text="请选择心愿书单分类"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/ask_price"
+                        android:layout_width="120dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/addwish_btn_pressed" >
+
+                        <Button
+                            android:id="@+id/addwish_coursebook"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:background="@null"
+                            android:text="急求!开价"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="12sp" />
+                        
+                        <EditText 
+                            android:id="@+id/price"
+                            android:layout_height="30dp"
+                            android:layout_width="wrap_content"
+                            android:minWidth="20dp"
+                            android:inputType="number"
+                            android:textSize="12sp"
+                            android:layout_marginBottom="10dp"/>
+                        
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:background="@null"
+                            android:text="元"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/addwish_english"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:background="@drawable/aw_btn_selector"
+                        android:text="我来请你喝杯咖啡吧"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="19dp"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/addwish_technology"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:background="@drawable/aw_btn_selector"
+                        android:text="送给我吧，我们交个朋友"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="#ffffff"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/addwish_img1"
+                        android:layout_width="50dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/addbook_plus" >
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/addwish_img2"
+                        android:layout_width="60dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@null" >
+                    </ImageView>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/addwish_wishlabel" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" >
+
+                    <EditText
+                        android:id="@+id/addwish_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@drawable/wish_desc"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginRight="19dp"
+                        android:hint="请输入书籍描述"
+                        android:paddingLeft="20dp"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/addwish_connection_label" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/addwish_description_bg"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/addwish_phone" />
+
+                        <EditText
+                            android:id="@+id/addwish_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:hint="手机"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/addwish_qq" />
+
+                        <EditText
+                            android:id="@+id/addwish_qq"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:hint="QQ"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/addwish_wechat" />
+
+                        <EditText
+                            android:id="@+id/addwish_wechat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:hint="微信"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                    
+                    <TextView 
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="联系我的时候，请说明是在校园二手书看到的"
+                        android:layout_marginLeft="19dp"
+                        android:textColor="#719780"
+                        android:layout_marginTop="8dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

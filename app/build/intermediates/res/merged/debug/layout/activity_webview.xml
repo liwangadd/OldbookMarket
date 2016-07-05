@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#3D7751"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/top_bt"
+                android:orientation="horizontal"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/register_back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="7dp"
+                    android:gravity="center"
+                    android:text="功能介绍"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="20dp"
+            android:text="我要发布新书："
+            android:textColor="@color/black_strik"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="首页->我要卖书!->扫码或者填写书籍名称->填写对书的一些描述->完成"
+            android:textColor="@color/fontcolor"
+            android:textSize="14sp" />
+                <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="20dp"
+            android:text="我要买二手书："
+            android:textColor="@color/black_strik"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="首页->书籍分类->书籍详情->点击联系卖家"
+            android:textColor="@color/fontcolor"
+            android:textSize="14sp" />
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:text="书籍分类页面可以根据自己的喜好选择学姐卖家、低价优先或者最新发布的书籍。"
+            android:textColor="@color/fontcolor"
+            android:textSize="14sp" />
+                <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="20dp"
+            android:text="我要找一本书：（发个心愿单）"
+            android:textColor="@color/black_strik"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="心愿书单->(右上角)发布心愿书单->填写信息并选择报答方式"
+            android:textColor="@color/fontcolor"
+            android:textSize="14sp" />
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:text="报答方式可以选择：1）高价急求；2）让我请你喝杯咖啡；3）送给我，交个朋友吧"
+            android:textColor="@color/fontcolor"
+            android:textSize="14sp" />
+                <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="20dp"
+            android:text="我想帮同学实现心愿："
+            android:textColor="@color/black_strik"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="心愿书单->选择帮Ta实现"
+            android:textColor="@color/fontcolor"
+            android:textSize="14sp" />
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:text="心愿单太多，不知道怎么选择？试试筛选：1）女生心愿专区；2）高价求购专区；3）和我专业相同"
+            android:textColor="@color/fontcolor"
+            android:textSize="14sp" />
+        <!--
+             <TextView 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="16sp"
+	        android:text="@string/functiondescrip"/>
+        -->
+
+    </LinearLayout>
+
+</ScrollView>

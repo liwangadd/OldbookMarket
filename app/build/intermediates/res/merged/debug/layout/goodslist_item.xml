@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="4dp" >
+
+    <ImageView
+        android:id="@+id/bookphoto"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_image" />
+
+    <TextView
+        android:id="@+id/bookname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/bookphoto"
+        android:text="@string/message_type"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/bookname"
+        android:layout_toRightOf="@id/bookphoto" >
+
+        <TextView
+            android:id="@+id/bookstaus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:text="正在出售，60天后下架"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/edit_btn"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/pc_btn_selector1"
+            android:focusable="false"
+            android:text="编辑"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/sellout_btn"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/edit_btn"
+            android:background="@drawable/pc_btn_selector2"
+            android:focusable="false"
+            android:text="售出"
+            android:textSize="12sp" />
+        
+        
+        <Button
+            android:id="@+id/sellback_btn"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/sellout_btn"
+            android:background="@drawable/pc_btn_selector2"
+            android:focusable="false"
+            android:text="不卖了"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,398 @@
+[
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/other_goods_list_item.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/other_goods_list_item.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/select_dialog_item_material.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/personcenter_message.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/personcenter_message.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/search_history_item.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/search_history_item.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/input.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/input.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/activity_wish_book.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/activity_wish_book.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/activity_aboutus.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/activity_aboutus.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/item.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/item.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/editpassword.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/editpassword.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/booklist_item.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/booklist_item.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/wish_detail_comment_item.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/wish_detail_comment_item.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/list_item.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/list_item.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/activity_wish_detail.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/activity_wish_detail.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/lv_header.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/lv_header.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/select_search_item.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/select_search_item.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/other_person_wish_item.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/other_person_wish_item.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/message_detail.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/message_detail.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/personcenter_edit.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/personcenter_edit.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/goodslist.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/goodslist.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_screen_content_include.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/activity_new_booklist.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/activity_new_booklist.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/main_page.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/main_page.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/goodslist_item.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/goodslist_item.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/message_item.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/message_item.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_search_view.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/activity_descriptiondetail.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/activity_descriptiondetail.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/wisheslist.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/wisheslist.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/waitting_dialog.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/waitting_dialog.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/notification_media_action.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/notification_media_action.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/select_message_item.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/select_message_item.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/wisheslist_item.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/wisheslist_item.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/refresh_footer.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/refresh_footer.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/select_message_activity.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/select_message_activity.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/big_pic_dialog.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/big_pic_dialog.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/new_activity_mainpage.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/new_activity_mainpage.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/other_detail_activity.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/other_detail_activity.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/activity_webview.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/activity_webview.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/search_history_header.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/search_history_header.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/notification_template_media.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/university_listitem.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/university_listitem.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/activity_new_book.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/activity_new_book.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/select_search_list.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/select_search_list.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/activity_new_wish.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/activity_new_wish.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/activity_camera.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/activity_camera.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/activity_search.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/activity_search.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/book_detail_comment.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/book_detail_comment.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/search_history_footer.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/search_history_footer.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/history_select_item.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/history_select_item.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/new_activity_bookmarket.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/new_activity_bookmarket.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/notification_template_lines.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/notification_template_lines.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/activity_register.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/activity_register.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/activity_book_detail.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/activity_book_detail.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/other_person_page.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/other_person_page.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/picture_item.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/picture_item.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/activity_welcome.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/activity_welcome.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_screen_simple.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/personcenter.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/personcenter.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/activity_loading.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/activity_loading.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/contents_item.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/contents_item.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/refresh_header.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/refresh_header.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/new_book_detail.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/new_book_detail.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/help_achieve_pop.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/help_achieve_pop.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/activity_login.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/activity_login.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/suggest_activity.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/suggest_activity.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/book_detail_tag_item.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/book_detail_tag_item.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/notification_template_big_media.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/notification_template_big_media.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/search_result_item.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/search_result_item.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/connect_seller_pop.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/connect_seller_pop.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/notification_media_cancel_action.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/layout/activity_setting.xml",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/layout/activity_setting.xml"
+    }
+]

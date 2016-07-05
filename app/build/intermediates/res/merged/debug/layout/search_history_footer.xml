@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/clear"
+        android:layout_height="32dp"
+        android:layout_width="90dp"
+        android:text="清空历史记录"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:gravity="center"
+        android:textColor="#8E8E8E"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/clearbg"/>
+
+</LinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/main_page_search"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#3D7751"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="4dp" >
+        
+        <ImageView 
+            android:id="@+id/back"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_width="20dp"
+            android:src="@drawable/register_back"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="8dp"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="4"
+            android:background="@drawable/searchbg" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:src="@drawable/title" />
+
+            <EditText
+                android:id="@+id/search_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:hint="输入关键字"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/search_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:text="搜索"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+            
+            <Button 
+                android:id="@+id/select_search"
+                android:visibility="gone"
+                android:background="@drawable/top_right"
+                android:layout_width="24dp"
+                android:layout_gravity="center"
+                android:layout_height="24dp"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/select_tab"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/tag_one"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/hisselbg" >
+
+            <TextView
+                android:id="@+id/select_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="文学/小说/动漫"
+                android:textColor="#fff" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/delete_tab"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/tag_one"
+            android:layout_marginRight="-8dp"
+            android:src="@drawable/his_sel_del" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/search_result_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/search_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#3D7751"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/message_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/top_bt"
+            android:orientation="horizontal"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:src="@drawable/register_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="7dp"
+                android:gravity="center"
+                android:text="消息中心"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="6dp"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/clear_message_btn"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/top_bt"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp" >
+
+                <LinearLayout
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/message_clear" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView 
+        android:id="@+id/erro_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:src="@drawable/error"/>
+       <ListView 
+        android:id="@+id/message_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+       </ListView>
+    </RelativeLayout>
+   
+    
+
+</LinearLayout>
