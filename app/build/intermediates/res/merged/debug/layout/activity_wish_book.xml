@@ -82,16 +82,6 @@
                 android:background="@drawable/wish_type_selector"
                 android:text="女生心愿专区"
                 android:textSize="14sp" />
-
-            <Button
-                android:id="@+id/english"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:background="@drawable/wish_type_selector"
-                android:text="和我专业相同"
-                android:textSize="14sp" />
         </LinearLayout>
 
         <FrameLayout

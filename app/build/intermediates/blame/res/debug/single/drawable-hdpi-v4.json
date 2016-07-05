@@ -92,12 +92,12 @@
         "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/drawable-hdpi/help_ta.png"
     },
     {
-        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/pc_message_new.png",
-        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/drawable-hdpi/pc_message_new.png"
-    },
-    {
         "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/wish_type_bg.png",
         "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/drawable-hdpi/wish_type_bg.png"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/pc_message_new.png",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/drawable-hdpi/pc_message_new.png"
     },
     {
         "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/addbook_edit_bg2.png",
@@ -148,20 +148,20 @@
         "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/drawable-hdpi/addwish_connection_label.png"
     },
     {
-        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/title.png",
-        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/drawable-hdpi/title.png"
-    },
-    {
         "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/loading.xml",
         "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/drawable-hdpi/loading.xml"
     },
     {
-        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/university_layout_background.png",
-        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/drawable-hdpi/university_layout_background.png"
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/title.png",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/drawable-hdpi/title.png"
     },
     {
         "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/pc_btn_pressed.png",
         "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/drawable-hdpi/pc_btn_pressed.png"
+    },
+    {
+        "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/university_layout_background.png",
+        "source": "/home/windylee/StudioProj/OldbookMarket/app/src/main/res/drawable-hdpi/university_layout_background.png"
     },
     {
         "merged": "/home/windylee/StudioProj/OldbookMarket/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/addbook_takephoto.png",
