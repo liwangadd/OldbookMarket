@@ -30,6 +30,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.orhanobut.logger.Logger;
 import com.windylee.connection.OldBookFactory;
 import com.windylee.entity.Book;
 import com.windylee.oldbookmarket.R;
@@ -529,10 +530,12 @@ public class AddBookActivity extends Activity implements OnClickListener,
                         }
                         bookService = OldBookFactory.getBookSingleton();
                         if (book != null) {
+                            Logger.d(img1);
                             doAddBook(Utils.user_id, bookname, bookId, Utils.username, bookprice, bookquality, bookwho,
                                     bookhelp, phone, qq, wechat, img1, img2, img3, booktype, book.getSummary(), book.getRate(),
                                     book.getPrice(), book.getTag());
                         } else {
+                            Logger.d(img1);
                             doAddBook(Utils.user_id, bookname, bookId, Utils.username, bookprice, bookquality, bookwho,
                                     bookhelp, phone, qq, wechat, img1, img2, img3, booktype, "", "", "", "");
                         }
@@ -630,7 +633,8 @@ public class AddBookActivity extends Activity implements OnClickListener,
                            String bookquality, String bookwho, String bookhelp, String phone, String qq, String wechat,
                            String img1, String img2, String img3, int booktype, String summary, String rate, String price,
                            String tag) {
-        bookService.addBook(user_id, bookname, username, bookprice, bookquality, bookwho, bookhelp)
+        bookService.addBook(user_id, bookname, bookId, username, bookprice, bookquality, bookwho, bookhelp, phone, qq, wechat,
+                img1, img2, img3, summary, rate, tag, price, booktype)
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Action1<String>() {
                     @Override

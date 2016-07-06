@@ -58,13 +58,12 @@ public class NewBookFragment extends Fragment implements OnClickListener {
     private Map<String, List<Map<String, Object>>> bookmap;
     private List<Map<String, Object>> newlist, wholist;
     private LoadingDialog loadingDialog;
-    private ImageView ImagePoint1, ImagePoint2, ImagePoint3;
-    private TextView tvUniversity, curUniversity;
-    private LinearLayout layoutUniversity, layoutSelectUniversity;
-    private boolean selectUniversityFlag = false;
-    private ListView universityList;
-    private List<String> list;
-    private TextView allUniversity;
+    //    private ImageView ImagePoint1, ImagePoint2, ImagePoint3;
+    //    private TextView tvUniversity, curUniversity;
+//    private boolean selectUniversityFlag = false;
+//    private ListView universityList;
+    //    private List<String> list;
+//    private TextView allUniversity;
     public static boolean hasNewMessage = false;
 
     @Override
@@ -109,7 +108,7 @@ public class NewBookFragment extends Fragment implements OnClickListener {
 //            }
 //        };
 //        if (LoadingActivity.isNetworkAvailable(getActivity())) {
-            resetService();
+        resetService();
 //        } else {
 //            Toast.makeText(getActivity(), "请检查你的网络", Toast.LENGTH_SHORT).show();
 //        }
@@ -185,11 +184,11 @@ public class NewBookFragment extends Fragment implements OnClickListener {
         mainPageSummary[2] = (TextView) view.findViewById(R.id.hot1_summary);
         mainPageSummary[3] = (TextView) view.findViewById(R.id.hot2_summary);
 
-        ImagePoint1 = (ImageView) view.findViewById(R.id.image_point1);
-        ImagePoint2 = (ImageView) view.findViewById(R.id.image_point2);
-        ImagePoint3 = (ImageView) view.findViewById(R.id.image_point3);
-        universityList = (ListView) view
-                .findViewById(R.id.main_page_university_list);
+//        ImagePoint1 = (ImageView) view.findViewById(R.id.image_point1);
+//        ImagePoint2 = (ImageView) view.findViewById(R.id.image_point2);
+//        ImagePoint3 = (ImageView) view.findViewById(R.id.image_point3);
+//        universityList = (ListView) view
+//                .findViewById(R.id.main_page_university_list);
         selectBooks.setOnClickListener(this);
         selectAdd.setOnClickListener(this);
         selectGoods.setOnClickListener(this);
@@ -200,23 +199,23 @@ public class NewBookFragment extends Fragment implements OnClickListener {
 
         llSearch = (LinearLayout) view.findViewById(R.id.main_page_search);
         llSearch.setOnClickListener(this);
-        tvUniversity = (TextView) view.findViewById(R.id.mainpage_university);
-        layoutUniversity = (LinearLayout) view
-                .findViewById(R.id.mainpage_select_university);
-        layoutSelectUniversity = (LinearLayout) view
-                .findViewById(R.id.select_university_layout);
-        curUniversity = (TextView) view.findViewById(R.id.cur_university);
-        layoutUniversity.setOnClickListener(this);
+//        tvUniversity = (TextView) view.findViewById(R.id.mainpage_university);
+//        layoutUniversity = (LinearLayout) view
+//                .findViewById(R.id.mainpage_select_university);
+//        layoutSelectUniversity = (LinearLayout) view
+//                .findViewById(R.id.select_university_layout);
+//        curUniversity = (TextView) view.findViewById(R.id.cur_university);
+//        layoutUniversity.setOnClickListener(this);
 
-        allUniversity = (TextView) view.findViewById(R.id.university_name);
-        allUniversity.setOnClickListener(this);
+//        allUniversity = (TextView) view.findViewById(R.id.university_name);
+//        allUniversity.setOnClickListener(this);
     }
 
-    private void resetPoint() {
-        ImagePoint1.setBackgroundResource(R.drawable.feature_point);
-        ImagePoint2.setBackgroundResource(R.drawable.feature_point);
-        ImagePoint3.setBackgroundResource(R.drawable.feature_point);
-    }
+//    private void resetPoint() {
+//        ImagePoint1.setBackgroundResource(R.drawable.feature_point);
+//        ImagePoint2.setBackgroundResource(R.drawable.feature_point);
+//        ImagePoint3.setBackgroundResource(R.drawable.feature_point);
+//    }
 
     public void resetService() {
         bookService.getHomePageInfo(Utils.curUniversity).observeOn(AndroidSchedulers.mainThread())
@@ -392,23 +391,23 @@ public class NewBookFragment extends Fragment implements OnClickListener {
                 }
                 break;
 
-            case R.id.mainpage_select_university:
-                if (selectUniversityFlag) {
-                    selectUniversityFlag = false;
-                    layoutSelectUniversity.setVisibility(View.GONE);
-                } else {
-                    selectUniversityFlag = true;
-                    layoutSelectUniversity.setVisibility(View.VISIBLE);
-                }
-                break;
-            case R.id.university_name:
-                curUniversity.setText(allUniversity.getText().toString());
-                tvUniversity.setText(allUniversity.getText().toString());
-                Utils.curUniversity = "全部校区";
-                resetService();
-                selectUniversityFlag = false;
-                layoutSelectUniversity.setVisibility(View.GONE);
-                break;
+//            case R.id.mainpage_select_university:
+//                if (selectUniversityFlag) {
+//                    selectUniversityFlag = false;
+//                    layoutSelectUniversity.setVisibility(View.GONE);
+//                } else {
+//                    selectUniversityFlag = true;
+//                    layoutSelectUniversity.setVisibility(View.VISIBLE);
+//                }
+//                break;
+//            case R.id.university_name:
+//                curUniversity.setText(allUniversity.getText().toString());
+//                tvUniversity.setText(allUniversity.getText().toString());
+//                Utils.curUniversity = "全部校区";
+//                resetService();
+//                selectUniversityFlag = false;
+//                layoutSelectUniversity.setVisibility(View.GONE);
+//                break;
         }
     }
 
@@ -435,110 +434,110 @@ public class NewBookFragment extends Fragment implements OnClickListener {
                     "university", "全部校区");
             Utils.curUniversity = strUniversity;
         }
-        curUniversity.setText(Utils.curUniversity);
-        tvUniversity.setText(Utils.curUniversity);
+//        curUniversity.setText(Utils.curUniversity);
+//        tvUniversity.setText(Utils.curUniversity);
         resetService();
     }
 
-    public class UniversityAdapter extends BaseAdapter {
-        private List<String> list;
-        private LayoutInflater layoutInflater;
-        private Context context;
+//    public class UniversityAdapter extends BaseAdapter {
+//        private List<String> list;
+//        private LayoutInflater layoutInflater;
+//        private Context context;
+//
+//        public UniversityAdapter(Context context, List<String> list) {
+//            this.context = context;
+//            this.layoutInflater = LayoutInflater.from(context);
+//            this.list = list;
+//        }
+//
+//        @Override
+//        public int getCount() {
+//            // TODO Auto-generated method stub
+//            return list.size();
+//        }
+//
+//        @Override
+//        public Object getItem(int arg0) {
+//            // TODO Auto-generated method stub
+//            return list.get(arg0);
+//        }
+//
+//        @Override
+//        public long getItemId(int arg0) {
+//            // TODO Auto-generated method stub
+//            return 0;
+//        }
+//
+//        @Override
+//        public View getView(int position, View convertView, ViewGroup arg2) {
+//            // TODO Auto-generated method stub
+//            final ViewHolder viewHolder;
+//            if (convertView == null) {
+//                convertView = layoutInflater.inflate(
+//                        R.layout.university_listitem, null);
+//                viewHolder = new ViewHolder();
+//                viewHolder.title = (TextView) convertView
+//                        .findViewById(R.id.university_name);
+//
+//                viewHolder.title.setText(list.get(position).toString());
+//                viewHolder.title.setOnClickListener(new OnClickListener() {
+//
+//                    @Override
+//                    public void onClick(View v) {
+//                        // TODO Auto-generated method stub
+//                        String strUniversity = viewHolder.title.getText()
+//                                .toString();
+//                        curUniversity.setText(strUniversity);
+//                        tvUniversity.setText(strUniversity);
+//                        Utils.curUniversity = strUniversity;
+//                        resetService();
+//                        selectUniversityFlag = false;
+////                        layoutSelectUniversity.setVisibility(View.GONE);
+//                    }
+//                });
+//
+//            }
+//            return convertView;
+//        }
 
-        public UniversityAdapter(Context context, List<String> list) {
-            this.context = context;
-            this.layoutInflater = LayoutInflater.from(context);
-            this.list = list;
-        }
+//    private class ViewHolder {
+//        public TextView title;
+//    }
 
-        @Override
-        public int getCount() {
-            // TODO Auto-generated method stub
-            return list.size();
-        }
-
-        @Override
-        public Object getItem(int arg0) {
-            // TODO Auto-generated method stub
-            return list.get(arg0);
-        }
-
-        @Override
-        public long getItemId(int arg0) {
-            // TODO Auto-generated method stub
-            return 0;
-        }
-
-        @Override
-        public View getView(int position, View convertView, ViewGroup arg2) {
-            // TODO Auto-generated method stub
-            final ViewHolder viewHolder;
-            if (convertView == null) {
-                convertView = layoutInflater.inflate(
-                        R.layout.university_listitem, null);
-                viewHolder = new ViewHolder();
-                viewHolder.title = (TextView) convertView
-                        .findViewById(R.id.university_name);
-
-                viewHolder.title.setText(list.get(position).toString());
-                viewHolder.title.setOnClickListener(new OnClickListener() {
-
-                    @Override
-                    public void onClick(View v) {
-                        // TODO Auto-generated method stub
-                        String strUniversity = viewHolder.title.getText()
-                                .toString();
-                        curUniversity.setText(strUniversity);
-                        tvUniversity.setText(strUniversity);
-                        Utils.curUniversity = strUniversity;
-                        resetService();
-                        selectUniversityFlag = false;
-                        layoutSelectUniversity.setVisibility(View.GONE);
-                    }
-                });
-
-            }
-            return convertView;
-        }
-
-        private class ViewHolder {
-            public TextView title;
-        }
-
-    }
+//}
 
     /*
      * 动态设置ListView组建的高度
      */
-    public void setListViewHeightBasedOnChildren(ListView listView) {
-
-        ListAdapter listAdapter = listView.getAdapter();
-
-        if (listAdapter == null) {
-
-            return;
-
-        }
-
-        int totalHeight = 0;
-
-        for (int i = 0; i < listAdapter.getCount(); i++) {
-
-            View listItem = listAdapter.getView(i, null, listView);
-
-            listItem.measure(0, 0);
-
-            totalHeight += listItem.getMeasuredHeight();
-
-        }
-
-        ViewGroup.LayoutParams params = listView.getLayoutParams();
-
-        params.height = totalHeight
-
-                + (listView.getDividerHeight() * (listAdapter.getCount() - 1));
-
-        listView.setLayoutParams(params);
-
-    }
+//    public void setListViewHeightBasedOnChildren(ListView listView) {
+//
+//        ListAdapter listAdapter = listView.getAdapter();
+//
+//        if (listAdapter == null) {
+//
+//            return;
+//
+//        }
+//
+//        int totalHeight = 0;
+//
+//        for (int i = 0; i < listAdapter.getCount(); i++) {
+//
+//            View listItem = listAdapter.getView(i, null, listView);
+//
+//            listItem.measure(0, 0);
+//
+//            totalHeight += listItem.getMeasuredHeight();
+//
+//        }
+//
+//        ViewGroup.LayoutParams params = listView.getLayoutParams();
+//
+//        params.height = totalHeight
+//
+//                + (listView.getDividerHeight() * (listAdapter.getCount() - 1));
+//
+//        listView.setLayoutParams(params);
+//
+//    }
 }

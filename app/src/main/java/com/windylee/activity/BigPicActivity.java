@@ -23,8 +23,8 @@ public class BigPicActivity extends Activity implements OnClickListener {
 		setContentView(mainView);
 		mainView.setOnClickListener(this);
 		imageView=(ImageView) mainView.findViewById(R.id.look_pic);
-		imageView.setImageBitmap(((BitmapDrawable) BookDetailActivity.bookDetailImage
-				.getDrawable()).getBitmap());
+//		imageView.setImageBitmap(((BitmapDrawable) BookDetailActivity.bookDetailImage
+//				.getDrawable()).getBitmap());
 	}
 	@Override
 	public void onClick(View arg0) {

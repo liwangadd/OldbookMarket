@@ -31,6 +31,7 @@ import com.windylee.util.ScreenShot;
 import com.windylee.util.Utils;
 import com.windylee.widget.CircleImageView;
 import com.windylee.widget.ConnectSellerPopWindow;
+import com.windylee.widget.FlyBanner;
 import com.windylee.widget.GestureListener;
 import com.windylee.widget.InputPopWindow;
 import com.windylee.widget.MyGridView;
@@ -56,24 +57,15 @@ public class BookDetailActivity extends Activity implements OnClickListener {
             showAll, emptytTextView;
     private CircleImageView userImage;
     private LinearLayout llUserQQ, llUserWeChat;
-    private RelativeLayout header, nextLayout;
-    public static ImageView bookDetailImage;
-    private ImageView bookDetailImage1, bookDetailImage2,
-            bookDetailImage3, imagePoint1, imagePoint2, imagePoint3;
-    private int curImage = 1;
     private NoScrollListView comment;
     private ImageView bottomComment, bottomConnect, bottomShare, usersex;
-    private Boolean showAllFlag = true;
     private List<Map<String, Object>> list;
     private List<Map<String, Object>> commentlist;
     private Map<String, Object> map;
-    private int curPage = 0, maxPage = 0;
     private LinearLayout bottomLayout;
     private BookDetailCommentAdapter bookDetailCommentAdapter;
     private BookService bookService;
     private String bookname, bookid;
-    private int image_number = 0;
-    public static Bitmap lookBitmap;
     private LinearLayout doubanLayout;
     private TextView tvDoubanIntroduction, tvDoubanScore, tvDoubanPrice,
             tvDoubanTags;
@@ -81,6 +73,7 @@ public class BookDetailActivity extends Activity implements OnClickListener {
     private String userId;
     private GridLayout tagsLayout;
     private MyGridView tagsGridView;
+    private FlyBanner imgsBanner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -159,19 +152,16 @@ public class BookDetailActivity extends Activity implements OnClickListener {
     private void doGetBookInfo(String bookid) {
         bookService.getBookInfo(bookid).observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Action1<Map<String, Object>>() {
-                    @Override
-                    public void call(Map<String, Object> resule) {
-                        getInfomation(resule);
-                    }
-                }, new Action1<Throwable>() {
-                    @Override
-                    public void call(Throwable throwable) {
-                        Logger.d(throwable.getMessage());
-                    }
-                });
+                               @Override
+                               public void call(Map<String, Object> result) {
+                                   getInformation(result);
+                               }
+                           }
+
+                );
     }
 
-    private void getInfomation(Map<String, Object> map) {
+    private void getInformation(Map<String, Object> map) {
         // TODO Auto-generated method stub
         if (map.containsKey("introduction")) {
             if (!map.get("introduction").equals("")) {
@@ -193,24 +183,6 @@ public class BookDetailActivity extends Activity implements OnClickListener {
                 }
                 SimpleAdapter adapter = new SimpleAdapter(BookDetailActivity.this, list, R.layout.book_detail_tag_item, from, to);
                 tagsGridView.setAdapter(adapter);
-//				
-//				System.out.println("tags====="+tags.length);
-//				tagsLayout.removeAllViews();
-////				
-//				LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);  
-//				lp.setMargins(12, 12, 12, 12);  
-//				                      
-//				
-//				  for(int i=0;i<tags.length;i++)
-//				  {
-//				          TextView textview=new TextView(this);
-//				          textview.setText(tags[i]);
-//				          textview.setBackgroundResource(R.drawable.bt_main_page_top);
-//				          textview.setPadding(20, 20, 20, 20);
-//				          textview.setTextColor(Color.argb(255, 255, 255, 255));
-//				          textview.setLayoutParams(lp);
-//				          tagsLayout.addView(textview);
-//				  }
             } else {
                 doubanLayout.setVisibility(View.GONE);
             }
@@ -249,8 +221,7 @@ public class BookDetailActivity extends Activity implements OnClickListener {
             llUserQQ.setVisibility(View.VISIBLE);
             userQQ.setText(map.get("qq").toString());
         }
-        if (map.get("weixin").toString().equals("")
-                || map.get("weixin").toString().equals(null)) {
+        if (!map.containsKey("weixin") || map.get("weixin").toString().equals("")) {
             llUserWeChat.setVisibility(View.GONE);
         } else {
             llUserWeChat.setVisibility(View.VISIBLE);
@@ -274,93 +245,27 @@ public class BookDetailActivity extends Activity implements OnClickListener {
         } else {
             suitCrowd.setText("信息缺失");
         }
-        // String strSuit = map.get("audience").toString();
-        // if(strSuit.equals("1")){
-        // suitCrowd.setText("这本书属于教材资料");
-        // }else if(strSuit.equals("2")){
-        // suitCrowd.setText("这本书属于课外");
-        // }else{
-        // suitCrowd.setText(strSuit);
-        // }
+
         myEvaluation.setText(map.get("description").toString());
         userId = map.get("user_id").toString();
         Picasso.with(this).load(Utils.IMGURL + map.get("user_id")).into(userImage);
 //		imageLoader.displayImage(Utils.URL + map.get("user_id").toString(),
 //				userImage, GetImgeLoadOption.getIconOption());
         int length = map.get("imgs").toString().length();
-        imagePoint1.setBackgroundResource(R.drawable.feature_point_cur);
 
-        if (length < 10) {
-            image_number = 0;
-            imagePoint1.setVisibility(View.VISIBLE);
-            imagePoint2.setVisibility(View.GONE);
-            imagePoint3.setVisibility(View.GONE);
-        } else if (length < 40) {
-            image_number = 1;
-            imagePoint1.setVisibility(View.VISIBLE);
-            imagePoint2.setVisibility(View.GONE);
-            imagePoint3.setVisibility(View.GONE);
-
-            Picasso.with(this).load(Utils.IMGURL + map.get("imgs").toString().substring(1, 37)).into(bookDetailImage);
-//			imageLoader.displayImage(Utils.IMGURL
-//					+ map.get("imgs").toString().substring(1, 37),
-//					bookDetailImage, GetImgeLoadOption.getBookOption());
-            Picasso.with(this).load(Utils.IMGURL + map.get("imgs").toString().substring(1, 37)).into(bookDetailImage1);
-//			imageLoader.displayImage(Utils.IMGURL
-//					+ map.get("imgs").toString().substring(1, 37),
-//					bookDetailImage1, GetImgeLoadOption.getBookOption());
-        } else if (length < 80) {
-            image_number = 2;
-            imagePoint1.setVisibility(View.VISIBLE);
-            imagePoint2.setVisibility(View.VISIBLE);
-            imagePoint3.setVisibility(View.GONE);
-
-            Picasso.with(this).load(Utils.IMGURL + map.get("imgs").toString().substring(1, 37)).into(bookDetailImage);
-//			imageLoader.displayImage(Utils.IMGURL
-//					+ map.get("imgs").toString().substring(1, 37),
-//					bookDetailImage, GetImgeLoadOption.getBookOption());
-            Picasso.with(this).load(Utils.IMGURL + map.get("imgs").toString().substring(1, 37)).into(bookDetailImage1);
-//			imageLoader.displayImage(Utils.IMGURL
-//					+ map.get("imgs").toString().substring(1, 37),
-//					bookDetailImage1, GetImgeLoadOption.getBookOption());
-            Picasso.with(this).load(Utils.IMGURL + map.get("imgs").toString().substring(39, 75)).into(bookDetailImage);
-//			imageLoader.displayImage(Utils.IMGURL
-//					+ map.get("imgs").toString().substring(39, 75),
-//					bookDetailImage2, GetImgeLoadOption.getBookOption());
-
+        List<String> imgesUrl = new ArrayList<>();
+        if (length > 100) {
+            imgesUrl.add(Utils.IMGURL + map.get("imgs").toString().substring(1, 37));
+            imgesUrl.add(Utils.IMGURL + map.get("imgs").toString().substring(39, 75));
+            imgesUrl.add(Utils.IMGURL + map.get("imgs").toString().substring(77, 113));
+        } else if (length > 60) {
+            imgesUrl.add(Utils.IMGURL + map.get("imgs").toString().substring(1, 37));
+            imgesUrl.add(Utils.IMGURL + map.get("imgs").toString().substring(39, 75));
         } else {
-            image_number = 3;
-            imagePoint1.setVisibility(View.VISIBLE);
-            imagePoint2.setVisibility(View.VISIBLE);
-            imagePoint3.setVisibility(View.VISIBLE);
-
-            Picasso.with(this).load(Utils.IMGURL + map.get("imgs").toString().substring(1, 37)).into(bookDetailImage);
-//			imageLoader.displayImage(Utils.IMGURL
-//					+ map.get("imgs").toString().substring(1, 37),
-//					bookDetailImage, GetImgeLoadOption.getBookOption());
-            Picasso.with(this).load(Utils.IMGURL + map.get("imgs").toString().substring(1, 37)).into(bookDetailImage1);
-//			imageLoader.displayImage(Utils.IMGURL
-//					+ map.get("imgs").toString().substring(1, 37),
-//					bookDetailImage1, GetImgeLoadOption.getBookOption());
-            Picasso.with(this).load(Utils.IMGURL + map.get("imgs").toString().substring(39, 75)).into(bookDetailImage2);
-//			imageLoader.displayImage(Utils.IMGURL
-//					+ map.get("imgs").toString().substring(39, 75),
-//					bookDetailImage2, GetImgeLoadOption.getBookOption());
-            Picasso.with(this).load(Utils.IMGURL + map.get("imgs").toString().substring(77, 113)).into(bookDetailImage3);
-//			imageLoader.displayImage(Utils.IMGURL
-//					+ map.get("imgs").toString().substring(77, 113),
-//					bookDetailImage3, GetImgeLoadOption.getBookOption());
-
+            imgesUrl.add(Utils.IMGURL + map.get("imgs").toString().substring(1, 37));
         }
-        lookBitmap = ((BitmapDrawable) bookDetailImage
-                .getDrawable()).getBitmap();
+        imgsBanner.setImagesUrl(imgesUrl);
 
-    }
-
-    private void resetPoint() {
-        imagePoint1.setBackgroundResource(R.drawable.feature_point);
-        imagePoint2.setBackgroundResource(R.drawable.feature_point);
-        imagePoint3.setBackgroundResource(R.drawable.feature_point);
     }
 
     public void resetService() {
@@ -397,7 +302,7 @@ public class BookDetailActivity extends Activity implements OnClickListener {
             e.printStackTrace();
         }
 
-        Date curDate = new Date(System.currentTimeMillis());// 閼惧嘲褰囪ぐ鎾冲閺冨爼妫�
+        Date curDate = new Date(System.currentTimeMillis());
 
         Calendar cal0 = Calendar.getInstance();
         cal0.setTime(adddate);
@@ -426,24 +331,16 @@ public class BookDetailActivity extends Activity implements OnClickListener {
         showAll = (TextView) findViewById(R.id.book_detail_show_all);
         emptytTextView = (TextView) findViewById(R.id.empty_txv);
         usersex = (ImageView) findViewById(R.id.user_sex);
+        imgsBanner = (FlyBanner) findViewById(R.id.detail_imgs);
+
 
         llUserQQ = (LinearLayout) findViewById(R.id.ll_book_user_qq);
         llUserWeChat = (LinearLayout) findViewById(R.id.ll_book_user_wechat);
         doubanLayout = (LinearLayout) findViewById(R.id.douban_introduction_layout);
 
         bottomLayout = (LinearLayout) findViewById(R.id.bookdetail_bottomlayout);
-        header = (RelativeLayout) findViewById(R.id.header);
-        nextLayout = (RelativeLayout) findViewById(R.id.next_front_layout);
 
         // back = (ImageButton) findViewById(R.id.bt_detail_back);
-
-        bookDetailImage = (ImageView) findViewById(R.id.book_detail_image);
-        bookDetailImage1 = new ImageView(this);
-        bookDetailImage2 = new ImageView(this);
-        bookDetailImage3 = new ImageView(this);
-        imagePoint1 = (ImageView) findViewById(R.id.image_point1);
-        imagePoint2 = (ImageView) findViewById(R.id.image_point2);
-        imagePoint3 = (ImageView) findViewById(R.id.image_point3);
 
         comment = (NoScrollListView) findViewById(R.id.book_detail_comment);
 
@@ -463,166 +360,16 @@ public class BookDetailActivity extends Activity implements OnClickListener {
 
         llback.setOnClickListener(this);
         llShare.setOnClickListener(this);
-        // back.setOnClickListener(this);
         showAll.setClickable(true);
         showAll.setOnClickListener(this);
         bottomComment.setClickable(true);
         bottomConnect.setClickable(true);
         bottomShare.setClickable(true);
-        header.setLongClickable(true);
-        header.setOnTouchListener(new MyGestureListener(this));
-        // nextSeller.setOnClickListener(this);
-        // frontSeller.setOnClickListener(this);
         bottomComment.setOnClickListener(this);
         bottomConnect.setOnClickListener(this);
         bottomShare.setOnClickListener(this);
         userImage.setOnClickListener(this);
 
-    }
-
-    public class MyGestureListener extends GestureListener {
-
-        public MyGestureListener(Context context) {
-            super(context);
-            // TODO Auto-generated constructor stub
-        }
-
-        @Override
-        public boolean performClick() {
-            startNewActivity();
-            return true;
-        }
-
-        @Override
-        public boolean onTouch(View v, MotionEvent event) {
-            // TODO Auto-generated method stub
-            return super.onTouch(v, event);
-        }
-
-        @Override
-        public boolean left() {
-            if (image_number == 2) {
-                switch (curImage) {
-                    case 1:
-                        resetPoint();
-                        imagePoint2
-                                .setBackgroundResource(R.drawable.feature_point_cur);
-                        bookDetailImage
-                                .setImageBitmap(((BitmapDrawable) bookDetailImage2
-                                        .getDrawable()).getBitmap());
-                        curImage = 2;
-                        lookBitmap = ((BitmapDrawable) bookDetailImage2
-                                .getDrawable()).getBitmap();
-                        break;
-                    case 2:
-                        resetPoint();
-                        imagePoint1
-                                .setBackgroundResource(R.drawable.feature_point_cur);
-                        bookDetailImage
-                                .setImageBitmap(((BitmapDrawable) bookDetailImage1
-                                        .getDrawable()).getBitmap());
-                        curImage = 1;
-                        lookBitmap = ((BitmapDrawable) bookDetailImage1
-                                .getDrawable()).getBitmap();
-                        break;
-                }
-            } else if (image_number == 3) {
-                switch (curImage) {
-                    case 1:
-                        resetPoint();
-                        imagePoint3
-                                .setBackgroundResource(R.drawable.feature_point_cur);
-                        bookDetailImage
-                                .setImageBitmap(((BitmapDrawable) bookDetailImage3
-                                        .getDrawable()).getBitmap());
-                        curImage = 3;
-                        lookBitmap = ((BitmapDrawable) bookDetailImage3
-                                .getDrawable()).getBitmap();
-                        break;
-                    case 2:
-                        resetPoint();
-                        imagePoint1
-                                .setBackgroundResource(R.drawable.feature_point_cur);
-                        bookDetailImage
-                                .setImageBitmap(((BitmapDrawable) bookDetailImage1
-                                        .getDrawable()).getBitmap());
-                        curImage = 1;
-                        lookBitmap = ((BitmapDrawable) bookDetailImage1
-                                .getDrawable()).getBitmap();
-                        break;
-                    case 3:
-                        resetPoint();
-                        imagePoint2
-                                .setBackgroundResource(R.drawable.feature_point_cur);
-                        bookDetailImage
-                                .setImageBitmap(((BitmapDrawable) bookDetailImage2
-                                        .getDrawable()).getBitmap());
-                        curImage = 2;
-                        lookBitmap = ((BitmapDrawable) bookDetailImage2
-                                .getDrawable()).getBitmap();
-                        break;
-                }
-            }
-            return super.left();
-        }
-
-        @Override
-        public boolean right() {
-            if (image_number == 2) {
-                switch (curImage) {
-                    case 1:
-                        resetPoint();
-                        imagePoint2
-                                .setBackgroundResource(R.drawable.feature_point_cur);
-                        bookDetailImage
-                                .setImageBitmap(((BitmapDrawable) bookDetailImage2
-                                        .getDrawable()).getBitmap());
-                        curImage = 2;
-                        break;
-                    case 2:
-                        resetPoint();
-                        imagePoint1
-                                .setBackgroundResource(R.drawable.feature_point_cur);
-                        bookDetailImage
-                                .setImageBitmap(((BitmapDrawable) bookDetailImage1
-                                        .getDrawable()).getBitmap());
-                        curImage = 1;
-                        break;
-                }
-            } else if (image_number == 3) {
-                switch (curImage) {
-                    case 1:
-                        resetPoint();
-                        imagePoint2
-                                .setBackgroundResource(R.drawable.feature_point_cur);
-                        bookDetailImage
-                                .setImageBitmap(((BitmapDrawable) bookDetailImage2
-                                        .getDrawable()).getBitmap());
-                        curImage = 2;
-                        break;
-                    case 2:
-                        resetPoint();
-                        imagePoint3
-                                .setBackgroundResource(R.drawable.feature_point_cur);
-                        bookDetailImage
-                                .setImageBitmap(((BitmapDrawable) bookDetailImage3
-                                        .getDrawable()).getBitmap());
-                        curImage = 3;
-                        break;
-                    case 3:
-                        resetPoint();
-                        imagePoint1
-                                .setBackgroundResource(R.drawable.feature_point_cur);
-                        bookDetailImage
-                                .setImageBitmap(((BitmapDrawable) bookDetailImage1
-                                        .getDrawable()).getBitmap());
-                        curImage = 1;
-                        break;
-                }
-
-            }
-            return super.right();
-        }
     }
 
     @Override

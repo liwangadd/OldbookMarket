@@ -40,7 +40,7 @@ public class WishFragment extends Fragment implements OnHeaderRefreshListener,
     private PullToRefreshView mPullToRefreshView;
     private ListView listView;
     private LinearLayout productButton;
-    private Button allbook, coursebook, english;
+    private Button allbook, coursebook;
 
     private WishAdapter adapter;
     private List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
@@ -159,10 +159,10 @@ public class WishFragment extends Fragment implements OnHeaderRefreshListener,
     public void resetButtonColor() {
         allbook.setTextColor(Color.BLACK);
         coursebook.setTextColor(Color.BLACK);
-        english.setTextColor(Color.BLACK);
+//        english.setTextColor(Color.BLACK);
         coursebook.setBackgroundResource(R.drawable.white);
         allbook.setBackgroundResource(R.drawable.white);
-        english.setBackgroundResource(R.drawable.white);
+//        english.setBackgroundResource(R.drawable.white);
     }
 
     public void initView(View view) {
@@ -172,7 +172,6 @@ public class WishFragment extends Fragment implements OnHeaderRefreshListener,
         productButton = (LinearLayout) view.findViewById(R.id.wish_product_btn);
         allbook = (Button) view.findViewById(R.id.all);
         coursebook = (Button) view.findViewById(R.id.coursebook);
-        english = (Button) view.findViewById(R.id.english);
         noDataView = (ImageView) view.findViewById(R.id.no_data);
         productButton.setClickable(true);
         listView.setOnItemClickListener(new OnItemClickListener() {
@@ -202,7 +201,7 @@ public class WishFragment extends Fragment implements OnHeaderRefreshListener,
 
         allbook.setOnClickListener(this);
         coursebook.setOnClickListener(this);
-        english.setOnClickListener(this);
+//        english.setOnClickListener(this);
         loadingDialog = new LoadingDialog(getActivity());
 
     }
@@ -239,19 +238,19 @@ public class WishFragment extends Fragment implements OnHeaderRefreshListener,
                         R.color.seagreen));
                 coursebook.setBackgroundResource(R.drawable.wish_type_bg);
                 break;
-            case R.id.english:
-                if (Utils.user_id.equals("")) {
-                    Intent intent = new Intent(getActivity(), LoginActivity.class);
-                    startActivity(intent);
-                }
-                page = 1;
-                order_by = "school";
-                resetService();
-                resetButtonColor();
-                loadingDialog.show();
-                english.setTextColor(this.getResources().getColor(R.color.seagreen));
-                english.setBackgroundResource(R.drawable.wish_type_bg);
-                break;
+//            case R.id.english:
+//                if (Utils.user_id.equals("")) {
+//                    Intent intent = new Intent(getActivity(), LoginActivity.class);
+//                    startActivity(intent);
+//                }
+//                page = 1;
+//                order_by = "school";
+//                resetService();
+//                resetButtonColor();
+//                loadingDialog.show();
+//                english.setTextColor(this.getResources().getColor(R.color.seagreen));
+//                english.setBackgroundResource(R.drawable.wish_type_bg);
+//                break;
             default:
                 break;
         }

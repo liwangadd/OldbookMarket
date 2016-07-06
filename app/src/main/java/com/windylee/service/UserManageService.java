@@ -38,8 +38,8 @@ public interface UserManageService {
      */
     @POST("/user/setUserInfo")
     @FormUrlEncoded
-    public Observable<String> SetUserInfo(@Field("username") String username, @Field("gender") int gender, @Field("mobile") String mobile, @Field("qq") String qq,
-                                          @Field("weixin") String weixin, @Field("university") String university);
+    public Observable<String> SetUserInfo(@Field("user_id") String userId, @Field("username") String username, @Field("gender") int gender,
+                                          @Field("mobile") String mobile, @Field("qq") String qq, @Field("weixin") String weixin);
 
     /*
      * @Function 用户修改个人信息
@@ -69,7 +69,7 @@ public interface UserManageService {
 
     @POST("/user/getUniversitiesAndSchools")
     @FormUrlEncoded
-    public Observable<Map<String,Object>> getMessage(@Field("university") String university);
+    public Observable<Map<String, Object>> getMessage(@Field("university") String university);
 
     @GET("/user/hasNewMessages")
     public Observable<String> hasMessage();

@@ -322,102 +322,102 @@
                         </LinearLayout>
                     </LinearLayout>
 
-                    <LinearLayout
-                        android:id="@+id/select_university_layout"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/university_layout_background"
-                        android:orientation="vertical"
-                        android:paddingBottom="20dp"
-                        android:visibility="gone">
+                    <!--<LinearLayout-->
+                        <!--android:id="@+id/select_university_layout"-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:background="@drawable/university_layout_background"-->
+                        <!--android:orientation="vertical"-->
+                        <!--android:paddingBottom="20dp"-->
+                        <!--android:visibility="gone">-->
 
-                        <LinearLayout
-                            android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:gravity="center_vertical"
-                            android:orientation="horizontal">
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="fill_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="8dp"-->
+                            <!--android:gravity="center_vertical"-->
+                            <!--android:orientation="horizontal">-->
 
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="30dp"
-                                android:layout_marginLeft="4dp"
-                                android:layout_marginRight="4dp"
-                                android:layout_weight="1"
-                                android:gravity="center_vertical"
-                                android:singleLine="true"
-                                android:text="选择校区:"
-                                android:textSize="14sp"></TextView>
+                            <!--<TextView-->
+                                <!--android:layout_width="0dp"-->
+                                <!--android:layout_height="30dp"-->
+                                <!--android:layout_marginLeft="4dp"-->
+                                <!--android:layout_marginRight="4dp"-->
+                                <!--android:layout_weight="1"-->
+                                <!--android:gravity="center_vertical"-->
+                                <!--android:singleLine="true"-->
+                                <!--android:text="选择校区:"-->
+                                <!--android:textSize="14sp"></TextView>-->
 
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="fill_parent"
-                                android:layout_marginLeft="4dp"
-                                android:layout_marginRight="4dp"
-                                android:layout_weight="1"
-                                android:gravity="center"
-                                android:singleLine="true"
-                                android:text=""
-                                android:textSize="12sp"></TextView>
+                            <!--<TextView-->
+                                <!--android:layout_width="0dp"-->
+                                <!--android:layout_height="fill_parent"-->
+                                <!--android:layout_marginLeft="4dp"-->
+                                <!--android:layout_marginRight="4dp"-->
+                                <!--android:layout_weight="1"-->
+                                <!--android:gravity="center"-->
+                                <!--android:singleLine="true"-->
+                                <!--android:text=""-->
+                                <!--android:textSize="12sp"></TextView>-->
 
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="fill_parent"
-                                android:layout_marginLeft="4dp"
-                                android:layout_marginRight="4dp"
-                                android:layout_weight="1"
-                                android:gravity="center"
-                                android:singleLine="true"
-                                android:text=""
-                                android:textSize="12sp"></TextView>
-                        </LinearLayout>
+                            <!--<TextView-->
+                                <!--android:layout_width="0dp"-->
+                                <!--android:layout_height="fill_parent"-->
+                                <!--android:layout_marginLeft="4dp"-->
+                                <!--android:layout_marginRight="4dp"-->
+                                <!--android:layout_weight="1"-->
+                                <!--android:gravity="center"-->
+                                <!--android:singleLine="true"-->
+                                <!--android:text=""-->
+                                <!--android:textSize="12sp"></TextView>-->
+                        <!--</LinearLayout>-->
 
-                        <include layout="@layout/university_listitem" />
+                        <!--<include layout="@layout/university_listitem" />-->
 
-                        <ListView
-                            android:id="@+id/main_page_university_list"
-                            android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
-                            android:divider="@color/white"
-                            android:dividerHeight="1px"></ListView>
+                        <!--<ListView-->
+                            <!--android:id="@+id/main_page_university_list"-->
+                            <!--android:layout_width="fill_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:divider="@color/white"-->
+                            <!--android:dividerHeight="1px"></ListView>-->
 
-                        <View
-                            android:layout_width="fill_parent"
-                            android:layout_height="1px"
-                            android:background="#C3C3C3"></View>
+                        <!--<View-->
+                            <!--android:layout_width="fill_parent"-->
+                            <!--android:layout_height="1px"-->
+                            <!--android:background="#C3C3C3"></View>-->
 
-                        <LinearLayout
-                            android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:gravity="center_vertical"
-                            android:orientation="horizontal">
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="fill_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="4dp"-->
+                            <!--android:gravity="center_vertical"-->
+                            <!--android:orientation="horizontal">-->
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="30dp"
-                                android:layout_marginLeft="4dp"
-                                android:layout_marginRight="4dp"
-                                android:gravity="center_vertical"
-                                android:text="当前校区："
-                                android:textSize="14sp" />
+                            <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="30dp"-->
+                                <!--android:layout_marginLeft="4dp"-->
+                                <!--android:layout_marginRight="4dp"-->
+                                <!--android:gravity="center_vertical"-->
+                                <!--android:text="当前校区："-->
+                                <!--android:textSize="14sp" />-->
 
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="18dp"
-                                android:layout_gravity="center"
-                                android:src="@drawable/main_page_cur_university" />
+                            <!--<ImageView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="18dp"-->
+                                <!--android:layout_gravity="center"-->
+                                <!--android:src="@drawable/main_page_cur_university" />-->
 
-                            <TextView
-                                android:id="@+id/cur_university"
-                                android:layout_width="wrap_content"
-                                android:layout_height="fill_parent"
-                                android:gravity="center_vertical"
-                                android:text="本部"
-                                android:textColor="@color/fontcolor"
-                                android:textSize="14sp" />
-                        </LinearLayout>
-                    </LinearLayout>
+                            <!--<TextView-->
+                                <!--android:id="@+id/cur_university"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="fill_parent"-->
+                                <!--android:gravity="center_vertical"-->
+                                <!--android:text="本部"-->
+                                <!--android:textColor="@color/fontcolor"-->
+                                <!--android:textSize="14sp" />-->
+                        <!--</LinearLayout>-->
+                    <!--</LinearLayout>-->
                 </RelativeLayout>
 
                 <View
